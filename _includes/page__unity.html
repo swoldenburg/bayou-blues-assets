@@ -18,9 +18,9 @@
  }
 
  createUnityInstance(document.querySelector("#unity-canvas"), {
-     dataUrl: "Build/{{ page.unity_dir }}.data",
-     frameworkUrl: "Build/{{ page.unity_dir }}.framework.js",
-     codeUrl: "Build/{{ page.unity_dir }}.wasm",
+     dataUrl: "{{ site.baseurl }}/assets/unity/{{page.unity_dir}}/Build/{{ page.unity_dir }}.data",
+     frameworkUrl: "{{ site.baseurl }}/assets/unity/{{page.unity_dir}}/Build/{{ page.unity_dir }}.framework.js",
+     codeUrl: "{{ site.baseurl }}/assets/unity/{{page.unity_dir}}/Build/{{ page.unity_dir }}.wasm",
      streamingAssetsUrl: "StreamingAssets",
      companyName: "DefaultCompany",
      productName: "Book Test 1",
